@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block title %}{{ article.title }}{% endblock %}
+{% block nav_images_active %}active{% endblock %}
+{% block content %}
+    <div class="container" style="padding-top:3.5%">
+        <div class="container">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="font-size: 2em;text-align: center">{{ article.title }}</div>
+                    <div class="panel-body" style="font-size: 1.5em;background-color: #AFEEEE">
+                        <p style="line-height: 34px;color: #0f0f0f">　　{{ article.content|safe }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel-heading">
+            <div aria-label="...">
+                <ul class="pager">
+                    上一篇：
+                    {% if previous_article %}
+                        <li><a href="{% url 'detail' previous_article.id %}">{{ previous_article.title }}</a>
+                        </li>
+                    {% else %}
+                        <li><a>没有了</a></li>
+                    {% endif %}
+
+                    下一篇：
+                    {% if next_article %}
+                        <li><a href="{% url 'detail' next_article.id %}">{{ next_article.title }}</a></li>
+                    {% else %}
+                        <li><a>没有了</a></li>
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% block title %}文章{% endblock %}
+{% block nav_blog_active %}active{% endblock %}
+
+{% load staticfiles %}
+{% block header_extends %}
+    <link rel="stylesheet" href="{% static 'base.css' %}">
+{% endblock %}
+
+{# 页面内容 #}
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding-top: 5%">
+                <div class="panel panel-default" style="background-color: #AFEEEE">
+                    <div class="panel-heading" style="font-size: 2em;text-align: center">{% block blog_list_title %}
+                        文章列表{% endblock %}</div>
+                    <div class="panel-body">
+                        {% for article in articles %}
+                            <div class="blog">
+                                <h3 style="text-align: center"><a
+                                        href="{% url 'detail' article.id %}">{{ article.title }}</a></h3>
+                                <p style="font-size: 1.5em">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ article.content|safe|truncatechars:130 }}...</p>
+                            </div>
+                        {% empty %}
+                            <div class="blog">
+                                <h3>暂无文章，敬请期待</h3>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="paginator">
+                    <ul class="pagination">
+                        {# 上一页 #}
+                        <li>
+                            {% if pages.has_previous %}
+                                <a href="?page={{ pages.previous_page_number }}" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            {% else %}
+                                <span aria-hidden="true">&laquo;</span>
+                            {% endif %}
+                        </li>
+                        {# 全部页码 #}
+                        {% for page_num in range %}
+                            {% if page_num == page_of_articles.number %}
+                                <li class="active"><span>{{ page_num }}</span></li>
+                            {% else %}
+                                <li><a href="?page={{ page_num }}">{{ page_num }}</a></li>
+                            {% endif %}
+                        {% endfor %}
+                        {# 下一页 #}
+                        <li>
+                            {% if pages.has_next %}
+                                <a href="?page={{ pages.next_page_number }}" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            {% else %}
+                                <span aria-hidden="true">&raquo;</span>
+                            {% endif %}
+                        </li>
+                    </ul>
+                    <p>
+                        当前第【{{ pages.number }}】页，共【{{ pages.paginator.num_pages }}】页
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
