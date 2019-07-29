@@ -916,3 +916,125 @@ spawned uWSGI worker 4 (pid: 5133, cores: 1)
 [pid: 5131|app: 0|req: 5/11] 113.88.86.96 () {44 vars in 753 bytes} [Sat Jul 27 11:08:32 2019] GET /admin/login/?next=/admin/ => generated 1857 bytes in 54 msecs (HTTP/1.1 200) 7 headers in 381 bytes (1 switches on core 0)
 Not Found: /favicon.ico
 [pid: 5132|app: 0|req: 4/12] 113.88.86.96 () {42 vars in 652 bytes} [Sat Jul 27 11:08:32 2019] GET /favicon.ico => generated 2487 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Jul 29 10:30:17 2019] ***
+compiled with version: 7.4.0 on 19 July 2019 10:32:07
+os: Linux-4.15.0-48-generic #51-Ubuntu SMP Wed Apr 3 08:28:49 UTC 2019
+nodename: iZwz96ohwrcvsgroe0prryZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /data/wwwroot/mysite
+detected binary path: /data/venv/mysite/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /data/wwwroot/mysite/
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 7804
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:8997).
+bind(): Address already in use [core/socket.c line 769]
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Jul 29 10:33:36 2019] ***
+compiled with version: 7.4.0 on 19 July 2019 10:32:07
+os: Linux-4.15.0-48-generic #51-Ubuntu SMP Wed Apr 3 08:28:49 UTC 2019
+nodename: iZwz96ohwrcvsgroe0prryZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /data/wwwroot/mysite
+detected binary path: /data/venv/mysite/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /data/wwwroot/mysite/
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 7804
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8997 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Jan 14 2019, 11:02:34)  [GCC 8.0.1 20180414 (experimental) [trunk revision 259383]]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x56509afb3cd0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 291616 bytes (284 KB) for 4 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x56509afb3cd0 pid: 8642 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (pid: 8642, cores: 1)
+spawned uWSGI worker 2 (pid: 8644, cores: 1)
+spawned uWSGI worker 3 (pid: 8645, cores: 1)
+spawned uWSGI worker 4 (pid: 8646, cores: 1)
+[pid: 8646|app: 0|req: 1/1] 113.88.86.115 () {48 vars in 902 bytes} [Mon Jul 29 10:33:50 2019] GET / => generated 2308 bytes in 84 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 8645|app: 0|req: 1/2] 113.88.86.115 () {44 vars in 761 bytes} [Mon Jul 29 10:33:59 2019] GET /admin/ => generated 10486 bytes in 131 msecs (HTTP/1.1 200) 6 headers in 228 bytes (1 switches on core 0)
+[pid: 8646|app: 0|req: 2/3] 113.88.86.115 () {46 vars in 804 bytes} [Mon Jul 29 10:33:59 2019] GET /admin/jsi18n/ => generated 7678 bytes in 13 msecs (HTTP/1.1 200) 4 headers in 115 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 8645|app: 0|req: 2/4] 113.88.86.115 () {42 vars in 697 bytes} [Mon Jul 29 10:33:59 2019] GET /favicon.ico => generated 2487 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Jul 29 10:41:51 2019] ***
+compiled with version: 7.4.0 on 19 July 2019 10:32:07
+os: Linux-4.15.0-48-generic #51-Ubuntu SMP Wed Apr 3 08:28:49 UTC 2019
+nodename: iZwz96ohwrcvsgroe0prryZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /data/wwwroot/mysite
+detected binary path: /data/venv/mysite/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /data/wwwroot/mysite/
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 7804
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8997 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Jan 14 2019, 11:02:34)  [GCC 8.0.1 20180414 (experimental) [trunk revision 259383]]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x561f77864cd0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 291616 bytes (284 KB) for 4 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x561f77864cd0 pid: 8741 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (pid: 8741, cores: 1)
+spawned uWSGI worker 2 (pid: 8743, cores: 1)
+spawned uWSGI worker 3 (pid: 8744, cores: 1)
+spawned uWSGI worker 4 (pid: 8745, cores: 1)
+[pid: 8745|app: 0|req: 1/1] 113.88.86.115 () {44 vars in 761 bytes} [Mon Jul 29 10:42:01 2019] GET /admin/ => generated 10514 bytes in 131 msecs (HTTP/1.1 200) 7 headers in 359 bytes (1 switches on core 0)
+[pid: 8744|app: 0|req: 1/2] 113.88.86.115 () {46 vars in 804 bytes} [Mon Jul 29 10:42:02 2019] GET /admin/jsi18n/ => generated 7678 bytes in 66 msecs (HTTP/1.1 200) 4 headers in 115 bytes (1 switches on core 0)
+[pid: 8745|app: 0|req: 2/3] 113.88.86.115 () {46 vars in 871 bytes} [Mon Jul 29 10:42:10 2019] GET / => generated 2308 bytes in 5 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 8743|app: 0|req: 1/4] 113.88.86.115 () {44 vars in 761 bytes} [Mon Jul 29 10:42:18 2019] GET /admin/ => generated 10514 bytes in 127 msecs (HTTP/1.1 200) 6 headers in 228 bytes (1 switches on core 0)
+[pid: 8745|app: 0|req: 3/5] 113.88.86.115 () {46 vars in 804 bytes} [Mon Jul 29 10:42:18 2019] GET /admin/jsi18n/ => generated 7678 bytes in 9 msecs (HTTP/1.1 200) 4 headers in 115 bytes (1 switches on core 0)
+[pid: 8744|app: 0|req: 2/6] 113.88.86.115 () {42 vars in 697 bytes} [Mon Jul 29 10:42:18 2019] GET /favicon.ico => generated 85 bytes in 12 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 8745|app: 0|req: 4/7] 113.88.86.115 () {46 vars in 837 bytes} [Mon Jul 29 10:42:22 2019] GET /admin/article/article/ => generated 52326 bytes in 113 msecs (HTTP/1.1 200) 8 headers in 513 bytes (1 switches on core 0)
+[pid: 8744|app: 0|req: 3/8] 113.88.86.115 () {46 vars in 820 bytes} [Mon Jul 29 10:42:23 2019] GET /admin/jsi18n/ => generated 7678 bytes in 7 msecs (HTTP/1.1 200) 4 headers in 115 bytes (1 switches on core 0)
+[pid: 8745|app: 0|req: 5/9] 113.88.86.115 () {42 vars in 697 bytes} [Mon Jul 29 10:42:23 2019] GET /favicon.ico => generated 85 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 8741|app: 0|req: 1/10] 113.88.86.115 () {46 vars in 841 bytes} [Mon Jul 29 10:42:24 2019] GET /admin/huse/news/ => generated 54286 bytes in 213 msecs (HTTP/1.1 200) 8 headers in 513 bytes (1 switches on core 0)
+[pid: 8745|app: 0|req: 6/11] 113.88.86.115 () {46 vars in 814 bytes} [Mon Jul 29 10:42:24 2019] GET /admin/jsi18n/ => generated 7678 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 115 bytes (1 switches on core 0)
+[pid: 8744|app: 0|req: 4/12] 113.88.86.115 () {42 vars in 697 bytes} [Mon Jul 29 10:42:24 2019] GET /favicon.ico => generated 85 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 8743|app: 0|req: 2/13] 113.88.86.115 () {46 vars in 859 bytes} [Mon Jul 29 10:42:32 2019] GET /admin/huse/news/2636/update/ => generated 13057 bytes in 42 msecs (HTTP/1.1 200) 7 headers in 382 bytes (1 switches on core 0)
+[pid: 8745|app: 0|req: 7/14] 113.88.86.115 () {46 vars in 826 bytes} [Mon Jul 29 10:42:32 2019] GET /admin/jsi18n/ => generated 7678 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 115 bytes (1 switches on core 0)
+[pid: 8744|app: 0|req: 5/15] 113.88.86.115 () {42 vars in 697 bytes} [Mon Jul 29 10:42:32 2019] GET /favicon.ico => generated 85 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 8743|app: 0|req: 3/16] 113.88.86.115 () {46 vars in 847 bytes} [Mon Jul 29 10:42:34 2019] GET /admin/huse/news/ => generated 54286 bytes in 106 msecs (HTTP/1.1 200) 8 headers in 513 bytes (1 switches on core 0)
+[pid: 8745|app: 0|req: 8/17] 113.88.86.115 () {46 vars in 814 bytes} [Mon Jul 29 10:42:34 2019] GET /admin/jsi18n/ => generated 7678 bytes in 7 msecs (HTTP/1.1 200) 4 headers in 115 bytes (1 switches on core 0)
+[pid: 8744|app: 0|req: 6/18] 113.88.86.115 () {42 vars in 697 bytes} [Mon Jul 29 10:42:35 2019] GET /favicon.ico => generated 85 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
