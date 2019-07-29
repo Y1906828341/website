@@ -15,9 +15,16 @@ Including another URLconf
 """
 import xadmin
 from django.urls import path, include
+from django.conf.urls.static import static
+from django.conf import settings
 
 urlpatterns = [
+    path('mdeditor/', include('mdeditor.urls')),
     path('', include('article.urls')),
     path('', include('huse.urls')),
     path('admin/', xadmin.site.urls),
 ]
+
+if settings.DEBUG:
+    # static files (images, css, javascript, etc.)
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
